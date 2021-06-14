@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Tourism</title>
+  <meta charset="utf-8">
+
+  <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+    integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+
+    .logo {
+      font-weight: bolder;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("../images/menu.png") !important;
+    }
+
+    .carousel-item {
+      height: 480px;
+      background-color: grey;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      background-position: center center;
+    }
+
+    .carousel-item h1 {
+      font-weight: bolder;
+    }
+
+    .carousel-item a {
+      width: 148px;
+      height: 36px;
+      line-height: 36px;
+      border-radius: 20px;
+      background-color: #08489c;
+      color: white;
+      -webkit-box-flex: 0;
+          -ms-flex: none;
+              flex: none;
+      -webkit-transition: -webkit-transform .2s ease-out 0s;
+      transition: -webkit-transform .2s ease-out 0s;
+      transition: transform .2s ease-out 0s;
+      transition: transform .2s ease-out 0s, -webkit-transform .2s ease-out 0s;
+    }
+
+    .carousel-item a:hover {
+      text-decoration: none;
+      -webkit-transform: translateY(-5px);
+              transform: translateY(-5px);
+    }
+
+    .carousel-title {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: 100%;
+    }
+
+    .container {
+      margin-right: auto;
+      margin-left: auto;
+      padding-right: 15px;
+      padding-left: 15px;
+      width: 100%;
+    }
+  
+    .alert {
+      margin-top: 50px;
+      margin-bottom: 16px;
+      background-color: #08489c;
+      color: white;
+    }
+
+    .course {
+      display: block;
+      -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+              box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+      margin-bottom: 20px;
+      -webkit-transition: -webkit-transform .2s ease-out 0s;
+      transition: -webkit-transform .2s ease-out 0s;
+      transition: transform .2s ease-out 0s;
+      transition: transform .2s ease-out 0s, -webkit-transform .2s ease-out 0s;
+    }
+
+    .course:hover {
+      text-decoration: none;
+      -webkit-transform: translateY(-5px);
+              transform: translateY(-5px);
+    }
+
+    .course .info {
+      padding: 10px;
+      color: #4a4a4a;
+      margin-bottom: 10px;
+    }
+
+    .course h4 {
+      font-size: 16px;
+      display: inline-block;
+    }
+
+    .course .name {
+      font-size: 12px;
+    }
+
+    footer {
+      height: 200px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      background-color: #fff;
+      border-top: 1px solid #e1e4e6;
+
+    }
+
+    .wrapper {
+      background-size: cover;
+      background-image: url(https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+      background-position: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: 320px;
+      background-repeat: no-repeat;
+      margin-top: 32px;
+    }
+
+    .content h1{
+      color: #fff;
+    }
+
+    .Gallery h3{
+    font-weight: bolder;
+    text-align: center;
+    display: block;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand logo" href="">TOURISM</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">공모전</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">소통마당</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">로그인
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">회원가입</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1476067897447-d0c5df27b5df?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
+        <div class="carousel-caption carousel-title">
+          <h1>12개의 길, 12개의 경험</h1>
+          <p>우리의 추억을 만들어 가요</p>
+          <a class="carousel-link" href="file:///C:/Users/User/Desktop/2020194008%20%EA%B9%80%EC%9C%A4%EA%B3%A4%20%EC%9B%B9/detailthree.html">더 알아보기</a>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1573475058214-d142fc8b6c6f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
+        <div class="carousel-caption carousel-title">
+          <h1>이것도 모르고 출발한다고요?</h1>
+          <p>알면 좋은 몇가지 꿀팁</p>
+          <a class="carousel-link" href="file:///C:/Users/User/Desktop/2020194008%20%EA%B9%80%EC%9C%A4%EA%B3%A4%20%EC%9B%B9/detailtwo.html">더 알아보기</a>
+        </div>
+      </div>
+
+      <div class="carousel-item active">
+        <img src="https://images.unsplash.com/photo-1556316384-12c35d30afa4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
+        <div class="carousel-caption carousel-title">
+          <h1>함께 만들어 나가는 갤러리</h1>
+          <p>자전거 국토종주와 함께</p>
+          <a class="carousel-link" href="file:///C:/Users/User/Desktop/2020194008%20%EA%B9%80%EC%9C%A4%EA%B3%A4%20%EC%9B%B9/index.html#">더 알아보기</a>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="alert alert-waring alert-dismissible fade show" role="alert">
+            <Strong>총 상금 500만원의 주인공은 누가 될 것인가!</Strong>  ---  갤러리 경연 참여 방법은 투어니즘 공식 홈페이지에 나와 있습니다.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>  
+          </div>
+        </div>
+
+
+   
+    <div class="Gallery col-12">
+        <h3>GALLERY</h3>
+    </div>
+
+
+      <div class="row">
+
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <a href="" class="course">
+            <img class="course-images" src="https://i.ibb.co/bJhsk7G/2.png" alt="" srcset="" width="100%">
+          <div class="info">
+            <h4>#1 Butterfly</h4>
+            <div class="lecturer">
+              <img src="https://bakey.codeit.kr/files/629/images/facebook.png" alt="" srcset="" width="20px" height="20px">
+              <span class="name">Brian Kim</span>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <a href="" class="course">
+            <img class="course-images" src="https://i.ibb.co/xJDR9WR/3.png" alt="" srcset="" width="100%">
+          <div class="info">
+            <h4>#2 뱃길 위 하늘길</h4>
+            <div class="lecturer">
+              <img src="https://bakey.codeit.kr/files/629/images/twitter.png" alt="" srcset="" width="20px" height="20px">
+              <span class="name">@Otaesik</span>
+            </div>
+          </div>
+        </a>
+        </div>
+        
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <a href="" class="course">
+            <img class="course-images" src="https://i.ibb.co/qDJSbz0/4.png" alt="" srcset="" width="100%">
+          <div class="info">
+            <h4>#3 터널</h4>
+            <div class="lecturer">
+              <img src="https://bakey.codeit.kr/files/629/images/facebook.png" alt="" srcset="" width="20px" height="20px">
+              <span class="name">김민지</span>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <a href="" class="course">
+            <img class="course-images" src="https://i.ibb.co/nR2ryVC/5.png" alt="" srcset="" width="100%">
+          <div class="info">
+            <h4>#4 노을 한 방울</h4>
+            <div class="lecturer">
+              <img src="https://bakey.codeit.kr/files/629/images/instagram.png" alt="" srcset="" width="20px" height="20px">
+              <span class="name">Txx_Sxp</span>
+            </div>
+          </div>
+        </a>
+        </div>
+        
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <a href="" class="course">
+            <img class="course-images" src="https://i.ibb.co/QY0Dcgp/6.png" alt="" srcset="" width="100%">
+          <div class="info">
+            <h4>#5 WAVE</h4>
+            <div class="lecturer">
+              <img src="https://bakey.codeit.kr/files/629/images/instagram.png" alt="" srcset="" width="20px" height="20px">
+              <span class="name">hwassung_Gazua</span>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <a href="" class="course">
+            <img class="course-images" src="https://i.ibb.co/JnGKj7C/7.png" alt="" srcset="" width="100%">
+          <div class="info">
+            <h4>#6 Wake up</h4>
+            <div class="lecturer">
+              <img src="https://bakey.codeit.kr/files/629/images/twitter.png" alt="" srcset="" width="20px" height="20px">
+              <span class="name">@yunkon177</span>
+            </div>
+          </div>
+        </a>
+        </div>
+        
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <a href="" class="course">
+            <img class="course-images" src="https://i.ibb.co/VmLt68J/8.png" alt="" srcset="" width="100%">
+          <div class="info">
+            <h4>#7 끝을 향해</h4>
+            <div class="lecturer">
+              <img src="https://bakey.codeit.kr/files/629/images/instagram.png" alt="" srcset="" width="20px" height="20px">
+              <span class="name">roses_are_rosie</span>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <a href="" class="course">
+            <img class="course-images" src="https://i.ibb.co/5FGBztT/1.png" alt="" srcset="" width="100%">
+          <div class="info">
+            <h4>#8 Over the horizon</h4>
+            <div class="lecturer">
+              <img src="https://bakey.codeit.kr/files/629/images/facebook.png" alt="" srcset="" width="20px" height="20px">
+              <span class="name">강산</span>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="container2">
+    <div class="wrapper">
+      <div class="content">
+          <h1>We only live once</h1>
+      </div>
+  </div>
+</div>
+
+
+    <footer class="container-fluid navbar-fixed-bottom">
+      <p>ⓒ TOURISM Corp.</p>
+    </footer>    
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script>
+      $('.carousel').carousel({
+      interval: 5000
+      })
+    </script>
+
+</body>
+
+</html>
